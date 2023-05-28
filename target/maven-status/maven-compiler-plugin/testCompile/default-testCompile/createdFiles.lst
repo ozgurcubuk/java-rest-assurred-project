@@ -1,0 +1,10 @@
+response\UserResponse.class
+request\RequestBase.class
+body\UserBody.class
+request\GetAUserTest.class
+request\GetUserListTest.class
+request\GetUserListTest$1.class
+request\DeleteAUserTest.class
+request\CreateUserTest.class
+request\PatchAUserActivityTest.class
+request\UpdateAUserTest.class

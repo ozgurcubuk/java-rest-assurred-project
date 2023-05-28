@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="40" failures="0" name="TestSuite" time="46.94" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="15.0.1+9-18"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\OzgurCubuk\IdeaProjects\restassured"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\OzgurCubuk\IdeaProjects\restassured"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="15.0.1+9-18"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\OZGURC~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\OzgurCubuk\Downloads\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\HashiCorp\vault_1.9.3_windows_amd64;C:\Program Files\k6\;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\OzgurCubuk\AppData\Roaming\npm;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\OzgurCubuk\Downloads\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\OzgurCubuk\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\OzgurCubuk\AppData\Local\Programs\Python\Python38\;C:\Users\OzgurCubuk\AppData\Local\Microsoft\WindowsApps;C:\Users\OzgurCubuk\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\OzgurCubuk\.dotnet\tools;C:\Users\OzgurCubuk\AppData\Local\Keybase\;C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.1\bin;;C:\Program Files\New Relic\New Relic CLI\;C:\Users\OzgurCubuk\AppData\Local\Programs\Fiddler;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\bin;;C:\Users\OzgurCubuk\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Users\OzgurCubuk\Downloads\apache-maven-3.8.6-bin\apache-maven-3.8.6/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="59.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Users\OzgurCubuk\Downloads\apache-maven-3.8.6-bin\apache-maven-3.8.6\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\OzgurCubuk"/>
+    <property name="user.timezone" value="Europe/Istanbul"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="15"/>
+    <property name="user.name" value="OzgurCubuk"/>
+    <property name="java.class.path" value="C:\Users\OzgurCubuk\Downloads\apache-maven-3.8.6-bin\apache-maven-3.8.6\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-15.0.1"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="15.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="maven.home" value="C:\Users\OzgurCubuk\Downloads\apache-maven-3.8.6-bin\apache-maven-3.8.6"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-10-20"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="request.CreateUserTest" name="createUserHappyPath" time="2.838"/>
+  <testcase classname="request.CreateUserTest" name="createUserWithFiftyCharFirstName" time="1.208"/>
+  <testcase classname="request.CreateUserTest" name="createUserWithFiftyCharLastName" time="1.165"/>
+  <testcase classname="request.CreateUserTest" name="createUserWithFourCharUserName" time="0.976"/>
+  <testcase classname="request.CreateUserTest" name="createUserWithTwelveCharUserName" time="1.057"/>
+  <testcase classname="request.CreateUserTest" name="createUserWithTwoCharFirstName" time="1.078"/>
+  <testcase classname="request.CreateUserTest" name="createUserWithTwoCharLastName" time="1.022"/>
+  <testcase classname="request.CreateUserTest" name="createUserWithoutPassword" time="1.058"/>
+  <testcase classname="request.CreateUserTest" name="doNotCreateUserWithFiftyOneCharFirstName" time="1.101"/>
+  <testcase classname="request.CreateUserTest" name="doNotCreateUserWithFiftyOneCharLastName" time="1.101"/>
+  <testcase classname="request.CreateUserTest" name="doNotCreateUserWithOneCharFirstName" time="1.07"/>
+  <testcase classname="request.CreateUserTest" name="doNotCreateUserWithOneCharLastName" time="1.149"/>
+  <testcase classname="request.CreateUserTest" name="doNotCreateUserWithThirteenCharUserName" time="1.292"/>
+  <testcase classname="request.CreateUserTest" name="doNotCreateUserWithThreeCharUserName" time="1.24"/>
+  <testcase classname="request.CreateUserTest" name="doNotCreateUserWithoutFirstName" time="1.122"/>
+  <testcase classname="request.CreateUserTest" name="doNotCreateUserWithoutLastName" time="1.122"/>
+  <testcase classname="request.CreateUserTest" name="doNotCreateUserWithoutUserName" time="0.982"/>
+  <testcase classname="request.CreateUserTest" name="doNotCreateWithAlphanumericFirstName" time="0.952"/>
+  <testcase classname="request.CreateUserTest" name="doNotCreateWithAlphanumericLastName" time="1.095"/>
+  <testcase classname="request.DeleteAUserTest" name="deleteAUserHappyPath" time="1.117"/>
+  <testcase classname="request.DeleteAUserTest" name="doNotDeleteAUserWitNonExistedUserId" time="0.997"/>
+  <testcase classname="request.GetAUserTest" name="doNotGetAUserWithNonExistedUserId" time="1"/>
+  <testcase classname="request.GetAUserTest" name="getAUserHappyPath" time="1.203"/>
+  <testcase classname="request.GetUserListTest" name="getUserList" time="1.1"/>
+  <testcase classname="request.PatchAUserActivityTest" name="doNotPatchAUserActivityWithImproperTypeOfIsActivePropertyValue" time="1.076"/>
+  <testcase classname="request.PatchAUserActivityTest" name="doNotPatchAUserActivityWithoutIsActiveProperty" time="1.149"/>
+  <testcase classname="request.PatchAUserActivityTest" name="patchAUserActivityAsFalse" time="1.904"/>
+  <testcase classname="request.PatchAUserActivityTest" name="patchAUserActivityAsTrue" time="1.039"/>
+  <testcase classname="request.UpdateAUserTest" name="doNotUpdateAUserWithFiftyOneCharFirstName" time="1.016"/>
+  <testcase classname="request.UpdateAUserTest" name="doNotUpdateAUserWithFiftyOneCharLastName" time="0.984"/>
+  <testcase classname="request.UpdateAUserTest" name="doNotUpdateAUserWithNonExistedUserId" time="0.958"/>
+  <testcase classname="request.UpdateAUserTest" name="doNotUpdateAUserWithOneCharFirstName" time="1.189"/>
+  <testcase classname="request.UpdateAUserTest" name="doNotUpdateAUserWithOneCharLastName" time="1.011"/>
+  <testcase classname="request.UpdateAUserTest" name="doNotUpdateAUserWithoutFirstName" time="1.087"/>
+  <testcase classname="request.UpdateAUserTest" name="doNotUpdateAUserWithoutLastName" time="1.02"/>
+  <testcase classname="request.UpdateAUserTest" name="updateAUserHappyPath" time="1.524"/>
+  <testcase classname="request.UpdateAUserTest" name="updateAUserWithFiftyCharFirstName" time="1.145"/>
+  <testcase classname="request.UpdateAUserTest" name="updateAUserWithFiftyCharLastName" time="1.009"/>
+  <testcase classname="request.UpdateAUserTest" name="updateAUserWithTwoCharFirstName" time="1.344"/>
+  <testcase classname="request.UpdateAUserTest" name="updateAUserWithTwoCharLastName" time="1.44"/>
+</testsuite>
