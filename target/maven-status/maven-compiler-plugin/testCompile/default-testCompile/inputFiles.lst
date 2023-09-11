@@ -1,9 +1,3 @@
-C:\Users\OzgurCubuk\IdeaProjects\restassured\src\test\java\request\RequestBase.java
-C:\Users\OzgurCubuk\IdeaProjects\restassured\src\test\java\request\CreateUserTest.java
-C:\Users\OzgurCubuk\IdeaProjects\restassured\src\test\java\body\UserBody.java
-C:\Users\OzgurCubuk\IdeaProjects\restassured\src\test\java\request\GetUserListTest.java
-C:\Users\OzgurCubuk\IdeaProjects\restassured\src\test\java\request\GetAUserTest.java
-C:\Users\OzgurCubuk\IdeaProjects\restassured\src\test\java\response\UserResponse.java
-C:\Users\OzgurCubuk\IdeaProjects\restassured\src\test\java\request\UpdateAUserTest.java
-C:\Users\OzgurCubuk\IdeaProjects\restassured\src\test\java\request\PatchAUserActivityTest.java
-C:\Users\OzgurCubuk\IdeaProjects\restassured\src\test\java\request\DeleteAUserTest.java
+C:\automation\api-test\api-test\restassured-test-project\src\test\java\request\RequestBase.java
+C:\automation\api-test\api-test\restassured-test-project\src\test\java\response\ProductResponse.java
+C:\automation\api-test\api-test\restassured-test-project\src\test\java\request\GetProductListTest.java

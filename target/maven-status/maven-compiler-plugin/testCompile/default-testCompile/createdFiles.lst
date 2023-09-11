@@ -1,10 +1,3 @@
-response\UserResponse.class
+request\GetProductListTest.class
 request\RequestBase.class
-body\UserBody.class
-request\GetAUserTest.class
-request\GetUserListTest.class
-request\GetUserListTest$1.class
-request\DeleteAUserTest.class
-request\CreateUserTest.class
-request\PatchAUserActivityTest.class
-request\UpdateAUserTest.class
+response\ProductResponse.class

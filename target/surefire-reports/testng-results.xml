@@ -1,183 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="40" passed="40" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-28T02:39:32 TRT" name="Command line suite" finished-at="2023-05-28T02:40:19 TRT" duration-ms="47017">
+  <suite started-at="2023-09-11T14:45:44 TRT" name="request.GetProductListTest" finished-at="2023-09-11T14:45:45 TRT" duration-ms="1604">
     <groups>
     </groups>
-    <test started-at="2023-05-28T02:39:32 TRT" name="Command line test" finished-at="2023-05-28T02:40:19 TRT" duration-ms="47017">
-      <class name="request.CreateUserTest">
-        <test-method signature="createUserHappyPath()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:32 TRT" name="createUserHappyPath" finished-at="2023-05-28T02:39:35 TRT" duration-ms="2836" status="PASS">
+    <test started-at="2023-09-11T14:45:44 TRT" name="Command line test" finished-at="2023-09-11T14:45:45 TRT" duration-ms="1604">
+      <class name="request.GetProductListTest">
+        <test-method signature="cannotGetProductListForUserThatIntegrationSiteIsTemporaryUnavailable()[pri:0, instance:request.GetProductListTest@62f68dff]" started-at="2023-09-11T14:45:44 TRT" name="cannotGetProductListForUserThatIntegrationSiteIsTemporaryUnavailable" finished-at="2023-09-11T14:45:44 TRT" duration-ms="798" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUserHappyPath -->
-        <test-method signature="createUserWithFiftyCharFirstName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:35 TRT" name="createUserWithFiftyCharFirstName" finished-at="2023-05-28T02:39:36 TRT" duration-ms="1208" status="PASS">
+        </test-method> <!-- cannotGetProductListForUserThatIntegrationSiteIsTemporaryUnavailable -->
+        <test-method signature="cannotGetProductListWithoutAuthorizationHeader()[pri:0, instance:request.GetProductListTest@62f68dff]" started-at="2023-09-11T14:45:44 TRT" name="cannotGetProductListWithoutAuthorizationHeader" finished-at="2023-09-11T14:45:44 TRT" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUserWithFiftyCharFirstName -->
-        <test-method signature="createUserWithFiftyCharLastName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:36 TRT" name="createUserWithFiftyCharLastName" finished-at="2023-05-28T02:39:37 TRT" duration-ms="1165" status="PASS">
+        </test-method> <!-- cannotGetProductListWithoutAuthorizationHeader -->
+        <test-method signature="cannotGetProductListWithoutValidAuthorizationHeader()[pri:0, instance:request.GetProductListTest@62f68dff]" started-at="2023-09-11T14:45:44 TRT" name="cannotGetProductListWithoutValidAuthorizationHeader" finished-at="2023-09-11T14:45:44 TRT" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUserWithFiftyCharLastName -->
-        <test-method signature="createUserWithFourCharUserName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:37 TRT" name="createUserWithFourCharUserName" finished-at="2023-05-28T02:39:38 TRT" duration-ms="975" status="PASS">
+        </test-method> <!-- cannotGetProductListWithoutValidAuthorizationHeader -->
+        <test-method signature="getProductsList()[pri:0, instance:request.GetProductListTest@62f68dff]" started-at="2023-09-11T14:45:44 TRT" name="getProductsList" finished-at="2023-09-11T14:45:45 TRT" duration-ms="723" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUserWithFourCharUserName -->
-        <test-method signature="createUserWithTwelveCharUserName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:38 TRT" name="createUserWithTwelveCharUserName" finished-at="2023-05-28T02:39:39 TRT" duration-ms="1057" status="PASS">
+        </test-method> <!-- getProductsList -->
+        <test-method signature="getProductsListWithOneExtraPropertyKey()[pri:0, instance:request.GetProductListTest@62f68dff]" started-at="2023-09-11T14:45:45 TRT" name="getProductsListWithOneExtraPropertyKey" finished-at="2023-09-11T14:45:45 TRT" duration-ms="18" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "thatOneExtraProperty" (class response.ProductResponse), not marked as ignorable (12 known properties: "isActive", "isBasketDiscount", "stock", "brand", "title", "price", "id", "description", "rating", "category", "basketDiscountPercentage", "images"])
+ at [Source: (String)"{"id":2,"title":"Apple iPhone 12 64 GB","description":"Lorem ipsum dolor sit amet.","price":13500,"isBasketDiscount":false,"rating":4.4,"stock":20,"brand":"Apple","category":"smartphones","images":["https://cdn.dsmcdn.com/mnresize/1200/1800/ty94/product/media/images/20210404/09/74346117/57616583/1/1_org_zoom.jpg"],"thatOneExtraProperty":"thatOneExtraPropertyValue"}"; line: 1, column: 341] (through reference chain: response.ProductResponse["thatOneExtraProperty"])]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "thatOneExtraProperty" (class response.ProductResponse), not marked as ignorable (12 known properties: "isActive", "isBasketDiscount", "stock", "brand", "title", "price", "id", "description", "rating", "category", "basketDiscountPercentage", "images"])
+ at [Source: (String)"{"id":2,"title":"Apple iPhone 12 64 GB","description":"Lorem ipsum dolor sit amet.","price":13500,"isBasketDiscount":false,"rating":4.4,"stock":20,"brand":"Apple","category":"smartphones","images":["https://cdn.dsmcdn.com/mnresize/1200/1800/ty94/product/media/images/20210404/09/74346117/57616583/1/1_org_zoom.jpg"],"thatOneExtraProperty":"thatOneExtraPropertyValue"}"; line: 1, column: 341] (through reference chain: response.ProductResponse["thatOneExtraProperty"])
+at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+at io.restassured.internal.path.json.mapping.JsonObjectDeserializer.deserializeWithJackson2(JsonObjectDeserializer.java:93)
+at io.restassured.internal.path.json.mapping.JsonObjectDeserializer.deserialize(JsonObjectDeserializer.java:53)
+at io.restassured.path.json.JsonPath.jsonStringToObject(JsonPath.java:1093)
+at io.restassured.path.json.JsonPath.getList(JsonPath.java:400)
+at request.GetProductListTest.getProductsListWithOneExtraPropertyKey(GetProductListTest.java:85)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "thatOneExtraProperty" (class response.ProductResponse), not marked as ignorable (12 known properties: "isActive", "isBasketDiscount", "stock", "brand", "title", "price", "id", "description", "rating", "category", "basketDiscountPercentage", "images"])
+ at [Source: (String)"{"id":2,"title":"Apple iPhone 12 64 GB","description":"Lorem ipsum dolor sit amet.","price":13500,"isBasketDiscount":false,"rating":4.4,"stock":20,"brand":"Apple","category":"smartphones","images":["https://cdn.dsmcdn.com/mnresize/1200/1800/ty94/product/media/images/20210404/09/74346117/57616583/1/1_org_zoom.jpg"],"thatOneExtraProperty":"thatOneExtraPropertyValue"}"; line: 1, column: 341] (through reference chain: response.ProductResponse["thatOneExtraProperty"])
+at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)
+at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1709)
+at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1687)
+at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)
+at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUserWithTwelveCharUserName -->
-        <test-method signature="createUserWithTwoCharFirstName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:39 TRT" name="createUserWithTwoCharFirstName" finished-at="2023-05-28T02:39:40 TRT" duration-ms="1079" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUserWithTwoCharFirstName -->
-        <test-method signature="createUserWithTwoCharLastName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:40 TRT" name="createUserWithTwoCharLastName" finished-at="2023-05-28T02:39:41 TRT" duration-ms="1023" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUserWithTwoCharLastName -->
-        <test-method signature="createUserWithoutPassword()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:41 TRT" name="createUserWithoutPassword" finished-at="2023-05-28T02:39:42 TRT" duration-ms="1059" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUserWithoutPassword -->
-        <test-method signature="doNotCreateUserWithFiftyOneCharFirstName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:42 TRT" name="doNotCreateUserWithFiftyOneCharFirstName" finished-at="2023-05-28T02:39:43 TRT" duration-ms="1102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotCreateUserWithFiftyOneCharFirstName -->
-        <test-method signature="doNotCreateUserWithFiftyOneCharLastName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:43 TRT" name="doNotCreateUserWithFiftyOneCharLastName" finished-at="2023-05-28T02:39:45 TRT" duration-ms="1101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotCreateUserWithFiftyOneCharLastName -->
-        <test-method signature="doNotCreateUserWithOneCharFirstName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:45 TRT" name="doNotCreateUserWithOneCharFirstName" finished-at="2023-05-28T02:39:46 TRT" duration-ms="1070" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotCreateUserWithOneCharFirstName -->
-        <test-method signature="doNotCreateUserWithOneCharLastName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:46 TRT" name="doNotCreateUserWithOneCharLastName" finished-at="2023-05-28T02:39:47 TRT" duration-ms="1149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotCreateUserWithOneCharLastName -->
-        <test-method signature="doNotCreateUserWithThirteenCharUserName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:47 TRT" name="doNotCreateUserWithThirteenCharUserName" finished-at="2023-05-28T02:39:48 TRT" duration-ms="1293" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotCreateUserWithThirteenCharUserName -->
-        <test-method signature="doNotCreateUserWithThreeCharUserName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:48 TRT" name="doNotCreateUserWithThreeCharUserName" finished-at="2023-05-28T02:39:49 TRT" duration-ms="1239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotCreateUserWithThreeCharUserName -->
-        <test-method signature="doNotCreateUserWithoutFirstName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:49 TRT" name="doNotCreateUserWithoutFirstName" finished-at="2023-05-28T02:39:50 TRT" duration-ms="1122" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotCreateUserWithoutFirstName -->
-        <test-method signature="doNotCreateUserWithoutLastName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:50 TRT" name="doNotCreateUserWithoutLastName" finished-at="2023-05-28T02:39:52 TRT" duration-ms="1121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotCreateUserWithoutLastName -->
-        <test-method signature="doNotCreateUserWithoutUserName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:52 TRT" name="doNotCreateUserWithoutUserName" finished-at="2023-05-28T02:39:53 TRT" duration-ms="981" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotCreateUserWithoutUserName -->
-        <test-method signature="doNotCreateWithAlphanumericFirstName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:53 TRT" name="doNotCreateWithAlphanumericFirstName" finished-at="2023-05-28T02:39:54 TRT" duration-ms="952" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotCreateWithAlphanumericFirstName -->
-        <test-method signature="doNotCreateWithAlphanumericLastName()[pri:0, instance:request.CreateUserTest@625abb97]" started-at="2023-05-28T02:39:54 TRT" name="doNotCreateWithAlphanumericLastName" finished-at="2023-05-28T02:39:55 TRT" duration-ms="1095" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotCreateWithAlphanumericLastName -->
-      </class> <!-- request.CreateUserTest -->
-      <class name="request.UpdateAUserTest">
-        <test-method signature="doNotUpdateAUserWithFiftyOneCharFirstName()[pri:0, instance:request.UpdateAUserTest@698122b2]" started-at="2023-05-28T02:40:05 TRT" name="doNotUpdateAUserWithFiftyOneCharFirstName" finished-at="2023-05-28T02:40:06 TRT" duration-ms="1017" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotUpdateAUserWithFiftyOneCharFirstName -->
-        <test-method signature="doNotUpdateAUserWithFiftyOneCharLastName()[pri:0, instance:request.UpdateAUserTest@698122b2]" started-at="2023-05-28T02:40:06 TRT" name="doNotUpdateAUserWithFiftyOneCharLastName" finished-at="2023-05-28T02:40:07 TRT" duration-ms="984" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotUpdateAUserWithFiftyOneCharLastName -->
-        <test-method signature="doNotUpdateAUserWithNonExistedUserId()[pri:0, instance:request.UpdateAUserTest@698122b2]" started-at="2023-05-28T02:40:07 TRT" name="doNotUpdateAUserWithNonExistedUserId" finished-at="2023-05-28T02:40:08 TRT" duration-ms="958" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotUpdateAUserWithNonExistedUserId -->
-        <test-method signature="doNotUpdateAUserWithOneCharFirstName()[pri:0, instance:request.UpdateAUserTest@698122b2]" started-at="2023-05-28T02:40:08 TRT" name="doNotUpdateAUserWithOneCharFirstName" finished-at="2023-05-28T02:40:09 TRT" duration-ms="1188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotUpdateAUserWithOneCharFirstName -->
-        <test-method signature="doNotUpdateAUserWithOneCharLastName()[pri:0, instance:request.UpdateAUserTest@698122b2]" started-at="2023-05-28T02:40:09 TRT" name="doNotUpdateAUserWithOneCharLastName" finished-at="2023-05-28T02:40:10 TRT" duration-ms="1011" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotUpdateAUserWithOneCharLastName -->
-        <test-method signature="doNotUpdateAUserWithoutFirstName()[pri:0, instance:request.UpdateAUserTest@698122b2]" started-at="2023-05-28T02:40:10 TRT" name="doNotUpdateAUserWithoutFirstName" finished-at="2023-05-28T02:40:11 TRT" duration-ms="1087" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotUpdateAUserWithoutFirstName -->
-        <test-method signature="doNotUpdateAUserWithoutLastName()[pri:0, instance:request.UpdateAUserTest@698122b2]" started-at="2023-05-28T02:40:11 TRT" name="doNotUpdateAUserWithoutLastName" finished-at="2023-05-28T02:40:12 TRT" duration-ms="1020" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotUpdateAUserWithoutLastName -->
-        <test-method signature="updateAUserHappyPath()[pri:0, instance:request.UpdateAUserTest@698122b2]" started-at="2023-05-28T02:40:12 TRT" name="updateAUserHappyPath" finished-at="2023-05-28T02:40:14 TRT" duration-ms="1524" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateAUserHappyPath -->
-        <test-method signature="updateAUserWithFiftyCharFirstName()[pri:0, instance:request.UpdateAUserTest@698122b2]" started-at="2023-05-28T02:40:14 TRT" name="updateAUserWithFiftyCharFirstName" finished-at="2023-05-28T02:40:15 TRT" duration-ms="1145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateAUserWithFiftyCharFirstName -->
-        <test-method signature="updateAUserWithFiftyCharLastName()[pri:0, instance:request.UpdateAUserTest@698122b2]" started-at="2023-05-28T02:40:15 TRT" name="updateAUserWithFiftyCharLastName" finished-at="2023-05-28T02:40:16 TRT" duration-ms="1008" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateAUserWithFiftyCharLastName -->
-        <test-method signature="updateAUserWithTwoCharFirstName()[pri:0, instance:request.UpdateAUserTest@698122b2]" started-at="2023-05-28T02:40:16 TRT" name="updateAUserWithTwoCharFirstName" finished-at="2023-05-28T02:40:18 TRT" duration-ms="1345" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateAUserWithTwoCharFirstName -->
-        <test-method signature="updateAUserWithTwoCharLastName()[pri:0, instance:request.UpdateAUserTest@698122b2]" started-at="2023-05-28T02:40:18 TRT" name="updateAUserWithTwoCharLastName" finished-at="2023-05-28T02:40:19 TRT" duration-ms="1440" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateAUserWithTwoCharLastName -->
-      </class> <!-- request.UpdateAUserTest -->
-      <class name="request.PatchAUserActivityTest">
-        <test-method signature="doNotPatchAUserActivityWithImproperTypeOfIsActivePropertyValue()[pri:0, instance:request.PatchAUserActivityTest@2ccca26f]" started-at="2023-05-28T02:40:00 TRT" name="doNotPatchAUserActivityWithImproperTypeOfIsActivePropertyValue" finished-at="2023-05-28T02:40:01 TRT" duration-ms="1076" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotPatchAUserActivityWithImproperTypeOfIsActivePropertyValue -->
-        <test-method signature="doNotPatchAUserActivityWithoutIsActiveProperty()[pri:0, instance:request.PatchAUserActivityTest@2ccca26f]" started-at="2023-05-28T02:40:01 TRT" name="doNotPatchAUserActivityWithoutIsActiveProperty" finished-at="2023-05-28T02:40:02 TRT" duration-ms="1148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotPatchAUserActivityWithoutIsActiveProperty -->
-        <test-method signature="patchAUserActivityAsFalse()[pri:0, instance:request.PatchAUserActivityTest@2ccca26f]" started-at="2023-05-28T02:40:02 TRT" name="patchAUserActivityAsFalse" finished-at="2023-05-28T02:40:04 TRT" duration-ms="1905" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- patchAUserActivityAsFalse -->
-        <test-method signature="patchAUserActivityAsTrue()[pri:0, instance:request.PatchAUserActivityTest@2ccca26f]" started-at="2023-05-28T02:40:04 TRT" name="patchAUserActivityAsTrue" finished-at="2023-05-28T02:40:05 TRT" duration-ms="1043" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- patchAUserActivityAsTrue -->
-      </class> <!-- request.PatchAUserActivityTest -->
-      <class name="request.DeleteAUserTest">
-        <test-method signature="deleteAUserHappyPath()[pri:0, instance:request.DeleteAUserTest@2a2c13a8]" started-at="2023-05-28T02:39:55 TRT" name="deleteAUserHappyPath" finished-at="2023-05-28T02:39:56 TRT" duration-ms="1118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteAUserHappyPath -->
-        <test-method signature="doNotDeleteAUserWitNonExistedUserId()[pri:0, instance:request.DeleteAUserTest@2a2c13a8]" started-at="2023-05-28T02:39:56 TRT" name="doNotDeleteAUserWitNonExistedUserId" finished-at="2023-05-28T02:39:57 TRT" duration-ms="998" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotDeleteAUserWitNonExistedUserId -->
-      </class> <!-- request.DeleteAUserTest -->
-      <class name="request.GetUserListTest">
-        <test-method signature="getUserList()[pri:0, instance:request.GetUserListTest@6b44435b]" started-at="2023-05-28T02:39:59 TRT" name="getUserList" finished-at="2023-05-28T02:40:00 TRT" duration-ms="1099" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUserList -->
-      </class> <!-- request.GetUserListTest -->
-      <class name="request.GetAUserTest">
-        <test-method signature="doNotGetAUserWithNonExistedUserId()[pri:0, instance:request.GetAUserTest@b6b1987]" started-at="2023-05-28T02:39:57 TRT" name="doNotGetAUserWithNonExistedUserId" finished-at="2023-05-28T02:39:58 TRT" duration-ms="999" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doNotGetAUserWithNonExistedUserId -->
-        <test-method signature="getAUserHappyPath()[pri:0, instance:request.GetAUserTest@b6b1987]" started-at="2023-05-28T02:39:58 TRT" name="getAUserHappyPath" finished-at="2023-05-28T02:39:59 TRT" duration-ms="1203" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAUserHappyPath -->
-      </class> <!-- request.GetAUserTest -->
+        </test-method> <!-- getProductsListWithOneExtraPropertyKey -->
+      </class> <!-- request.GetProductListTest -->
     </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+  </suite> <!-- request.GetProductListTest -->
 </testng-results>
